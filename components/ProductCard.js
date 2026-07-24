@@ -32,7 +32,6 @@ export default function ProductCard({ product }) {
     await deleteProduct(product.id);
   };
 
-  console.log("product.image_url:", product.image_url);
   return (
     <Card className="hover:shadow-lg transition-shadow">
       <CardHeader className="pb-3">
