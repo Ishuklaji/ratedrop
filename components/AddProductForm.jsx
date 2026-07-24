@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Loader2 } from "lucide-react";
 import { toast } from "sonner";
+import AuthModal from "./AuthModal";
+import { addProduct } from "@/app/actions";
 
 const AddProductForm = ({ user }) => {
   const [url, setUrl] = useState("");
@@ -67,11 +69,11 @@ const AddProductForm = ({ user }) => {
           </Button>
         </div>
       </form>
-      {/* 
+      
       <AuthModal
         isOpen={showAuthModal}
         onClose={() => setShowAuthModal(false)}
-      /> */}
+      />
     </>
   );
 };
