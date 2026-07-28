@@ -46,7 +46,7 @@ export async function POST(request) {
         const newPrice = parseFloat(productData.currentPrice);
         const oldPrice = parseFloat(product.current_price);
 
-        await supabase
+        const { error: updateError } = await supabase
           .from("products")
           .update({
             current_price: newPrice,
@@ -57,12 +57,18 @@ export async function POST(request) {
           })
           .eq("id", product.id);
 
+        if (updateError) throw updateError;
+
         if (oldPrice !== newPrice) {
-          await supabase.from("price_history").insert({
-            product_id: product.id,
-            price: newPrice,
-            currency: productData.currencyCode || product.currency,
-          });
+          const { error: historyError } = await supabase
+            .from("price_history")
+            .insert({
+              product_id: product.id,
+              price: newPrice,
+              currency: productData.currencyCode || product.currency,
+            });
+
+          if (historyError) throw historyError;
 
           results.priceChanges++;
 
