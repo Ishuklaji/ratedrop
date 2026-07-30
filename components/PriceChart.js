@@ -45,7 +45,7 @@ export default function PriceChart({ productId }) {
   if (data.length === 0) {
     return (
       <div className="text-center py-8 text-gray-500 w-full">
-        No price history yet. Check back after the first daily updates!
+        No price history yet. Check back after the first daily update!
       </div>
     );
   }
