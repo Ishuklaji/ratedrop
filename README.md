@@ -37,3 +37,7 @@ RESEND_FROM_EMAIL=
 NEXT_PUBLIC_APP_URL=
 CRON_SECRET=
 ```
+
+## Roadmap
+
+- Support tracking price targets and only alerting below a threshold
