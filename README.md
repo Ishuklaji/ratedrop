@@ -43,3 +43,4 @@ CRON_SECRET=
 - Support tracking price targets and only alerting below a threshold
 - Support multiple currencies per user with live conversion
 - Add a browser extension for one-click tracking from any product page
+- Add weekly digest emails summarizing all tracked products
