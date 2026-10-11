@@ -44,3 +44,4 @@ CRON_SECRET=
 - Support multiple currencies per user with live conversion
 - Add a browser extension for one-click tracking from any product page
 - Add weekly digest emails summarizing all tracked products
+- Add a mobile-friendly PWA view for tracked products
