@@ -38,6 +38,13 @@ NEXT_PUBLIC_APP_URL=
 CRON_SECRET=
 ```
 
+## Benefits
+
+- Never overpay — get notified the moment a tracked product's price drops
+- No manual checking — prices are rechecked automatically every day
+- Works across sites — one tracker for Amazon, Zara, Walmart, and more
+- See the full price history for any product before deciding to buy
+
 ## Roadmap
 
 - Support tracking price targets and only alerting below a threshold
