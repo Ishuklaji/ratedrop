@@ -38,6 +38,15 @@ NEXT_PUBLIC_APP_URL=
 CRON_SECRET=
 ```
 
+## Features
+
+- Add a product by URL — Firecrawl extracts name, price, currency, and image
+- Automatic daily price checks via a scheduled Vercel cron job
+- Email alerts the moment a tracked product's price drops
+- Per-product price history chart
+- Google sign-in via Supabase Auth
+- Remove a product from tracking at any time
+
 ## Benefits
 
 - Never overpay — get notified the moment a tracked product's price drops
